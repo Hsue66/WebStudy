@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form exercise</title>
+  </head>
+  <body>
+    <h1>Register</h1>
+    <form>
+      <label for="fname">First Name: </label>
+      <input type="text" name="fname" placeholder="John" required>
+      <label for="lname">Last Name: </label>
+      <input type="text" name="lname" placeholder="Smith" required>
+
+      <div>
+        <label for="male">Male</label>
+        <input type="radio" name="Sex" id="male" value="male">
+        <label for="female">Female</label>
+        <input type="radio" name="Sex" id="female" value="female">
+        <label for="other">Other</label>
+        <input type="radio" name="Sex" id="other" value="other">
+      </div>
+
+      <div>
+        <label for="email">Email: </label>
+        <input type="email" name="email" placeholder="your email" required>
+        <label for="pw">Password: </label>
+        <input type="password" name="pw" pattern=".{5,8}" required title="5 to 8 characters">
+      </div>
+
+      <div>
+        <label>
+          Birthday:
+          <select class="" name="Month">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+          <select class="" name="Day">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+          <select class="" name="Year">
+            <option>2018</option>
+            <option>2017</option>
+            <option>2016</option>
+            <option>2015</option>
+          </select>
+        </label>
+      <div>
+
+      <label for="agree">I agree to the terms and conditions </label>
+      <input type="checkbox" name="agree">
+      <br>
+
+      <input type="submit">
+    </form>
+  </body>
+</html>
