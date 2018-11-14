@@ -6,8 +6,7 @@ app.get("/",function(req,res){
 });
 
 app.get("/speak/:animal",function(req,res){
-  //var sound = {'pig':'Oink','cow':'Moo'};
-  //console.log(sound['pig']);
+  /*
   var AnimalSounds = new Map();
   var animals = ["pig","cow","dog","cat","sheep"];
   var sounds = ["Oink","Moo","Woof Woof","Meow","Meeee"];
@@ -15,6 +14,16 @@ app.get("/speak/:animal",function(req,res){
     AnimalSounds.set(animals[i],sounds[i]);
 
   res.send("The "+req.params.animal+" says '"+AnimalSounds.get(req.params.animal)+"'");
+  */
+  var sounds = {
+    pig:"Oink",
+    cow:"Moo",
+    dog:"Woof Woof",
+    cat:"Meow",
+    sheep:"Meee"
+  };
+  animal = req.params.animal.toLowerCase();
+  res.send("The "+animal+" says '"+sounds[animal]+"'");
 });
 
 app.get("/repeat/:str/:times",function(req,res){
