@@ -1,3 +1,34 @@
 body{
-  font:
+  font-family: 'Open Sans';
+}
+
+.copyright{
+  background-color: #333333;
+  display: table;
+  height: 65px;
+  width: 100%;
+}
+
+.copyright-content{
+  color: #9e9e9e;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.footer{
+  background-color: #edeff2;
+}
+
+.footer-contents{
+  color: #676770;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h5 {
+  font-size: 16px;
+}
+.pink{
+  background-color: pink;
 }
