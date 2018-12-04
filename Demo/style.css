@@ -2,18 +2,27 @@ body{
   font-family: 'Open Sans';
 }
 
-.copyright{
-  background-color: #333333;
-  display: table;
-  height: 65px;
-  width: 100%;
+h2{
+  color: #333333;
 }
+h4{
+  color: #8e8e9c;
+}
+/*
+blue
+  color: #1f3263;
+beige
+  color: #d8b17e;
+drak gray
+  color: #333333;
+gray
+  color: #737373;
+  */
 
-.copyright-content{
-  color: #9e9e9e;
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
+.article-content{
+  font-size: 16px;
+  color: #1f3263;
+
 }
 
 .footer{
@@ -22,13 +31,28 @@ body{
 
 .footer-contents{
   color: #676770;
-  padding-top: 20px;
   padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 h5 {
   font-size: 16px;
 }
+
+.copyright{
+  background-color: #333333;
+  display: table;
+  height: 65px;
+  width: 100%;
+}
+
+.copyright-content{
+  color: #8e8e9c;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
 .pink{
   background-color: pink;
 }
