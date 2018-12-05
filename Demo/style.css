@@ -2,13 +2,46 @@ body{
   font-family: 'Open Sans';
 }
 
+.navbar{
+  margin-bottom: 0px;
+}
+
+.search{
+  background:url('bg.jpg') no-repeat center center;
+  background-size: cover;
+  display: table;
+  height: 150px;
+  width: 100%;
+  margin-top: 0px;
+}
+
+.search_con{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+h1{
+  color:#333333;
+  font-size: 38px;
+}
+
+.btn-search{
+  background-color: #d8b17e;
+}
+
+.cy_con{
+  height: 500px;
+}
+
 .ec_btn{
   margin-bottom: 15px;
+  margin-top: 20px;
 }
 
 .cy{
   background-color: #edeff2;
-  height: 100px;
+  height: 500px;
 }
 
 h2{
