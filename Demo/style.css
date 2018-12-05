@@ -2,6 +2,15 @@ body{
   font-family: 'Open Sans';
 }
 
+.ec_btn{
+  margin-bottom: 15px;
+}
+
+.cy{
+  background-color: #edeff2;
+  height: 100px;
+}
+
 h2{
   color: #333333;
 }
@@ -19,10 +28,15 @@ gray
   color: #737373;
   */
 
-.article-content{
-  font-size: 16px;
-  color: #1f3263;
+.title{
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
 
+.article-content{
+  color: #1f3263;
+  font-size: 16px;
+  margin-bottom: 100px;
 }
 
 .footer{
