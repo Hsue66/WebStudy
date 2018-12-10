@@ -6,6 +6,15 @@ body{
   margin-bottom: 0px;
 }
 
+.navbar-header{
+  font-size: 16px;
+  letter-spacing: 5px;
+}
+
+.navbar-nav{
+  font-size: 15px;
+}
+
 .search{
   background:url('bg.jpg') no-repeat center center;
   background-size: cover;
@@ -22,12 +31,14 @@ body{
 }
 
 h1{
-  color:#333333;
+  color:white;
   font-size: 38px;
+  text-shadow: 2px 2px 5px black;
 }
 
 .btn-search{
   background-color: #d8b17e;
+  font-size:16px;
 }
 
 .cy_con{
@@ -70,6 +81,7 @@ gray
   color: #1f3263;
   font-size: 16px;
   margin-bottom: 100px;
+  min-height: 350px;
 }
 
 .footer{

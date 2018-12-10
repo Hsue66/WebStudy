@@ -10,9 +10,9 @@ app.get("/",function(req,res){
 });
 
 var campgrounds = [
-  {name:"Seulak", img:"https://photosforclass.com/download/pixabay-1208201?webUrl=https%3A%2F%2Fpixabay.com%2Fget%2Fe837b1072af4003ed1584d05fb1d4e97e07ee3d21cac104491f3c27da1eabcbd_960.jpg&user=Free-Photos"},
-  {name:"Kwanak", img:"https://photosforclass.com/download/pixabay-691424?webUrl=https%3A%2F%2Fpixabay.com%2Fget%2Fef3cb00b2af01c22d2524518b7444795ea76e5d004b0144596f3c57fa0e4b0_960.jpg&user=Free-Photos"},
-  {name:"Hanla", img:"https://photosforclass.com/download/pixabay-1845719?webUrl=https%3A%2F%2Fpixabay.com%2Fget%2Fe83db50a2ff5083ed1584d05fb1d4e97e07ee3d21cac104491f3c27da1eabcbd_960.jpg&user=Pexels"},
+  {name:"Seulak", img:"https://pixabay.com/get/e837b1072af4003ed1584d05fb1d4e97e07ee3d21cac104491f4c270a3e8b3b1_340.jpg"},
+  {name:"Kwanak", img:"https://pixabay.com/get/ef3cb00b2af01c22d2524518b7444795ea76e5d004b0144591f3c87da2ebbc_340.jpg"},
+  {name:"Hanla", img:"https://pixabay.com/get/e83db50a2ff5083ed1584d05fb1d4e97e07ee3d21cac104491f4c270a3e8b3b1_340.jpg"},
 ];
 
 app.get("/campgrounds",function(req,res){

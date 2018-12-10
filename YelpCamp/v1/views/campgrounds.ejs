@@ -1,5 +1,5 @@
 <% include partials/header %>
-  
+
 
 <div class="container">
   <header class="jumbotron">
@@ -15,8 +15,8 @@
   <div class="row text-center" style="display:flex; flex-wrap: wrap;">
     <% campgrounds.forEach(function(campground){ %>
       <div class="col-md-3 col-sm-6">
-        <div class = "thumnail">
-          <img width="250px" src="<%= campground.img %>">
+        <div class = "thumbnail">
+          <img src="<%= campground.img %>">
           <div class = "caption">
             <h3>"<%= campground.name %>"</h3>
           </div>
