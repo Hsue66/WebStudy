@@ -31,7 +31,7 @@ h1{
 .m_intro{
   /* background-color: #edeff2; */
   min-height: 620px;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 .intro_header{
@@ -43,7 +43,7 @@ h1{
 }
 
 .intro_con{
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .intro_box{
@@ -68,7 +68,7 @@ h1{
   display: inline-block;
   height: 100%;
   vertical-align: middle;
-  margin-right: -0.25em; 
+  margin-right: -0.25em;
 }
 
 .icon span {
