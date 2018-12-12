@@ -11,14 +11,17 @@ app.use(bodyParser.urlencoded({extended: true}));
 // SCHEMA SETUP
 var campgroundSchema = new mongoose.Schema({
   name: String,
-  image: String
+  image: String,
+  description: String
 });
 
 var Campground = mongoose.model("Campground",campgroundSchema);
 
-
-/*Campground.create(
-  {name:"Seulak", image:"https://pixabay.com/get/e837b1072af4003ed1584d05fb1d4e97e07ee3d21cac104491f4c270a3e8b3b1_340.jpg"}, function(err, campground){
+/*
+Campground.create(
+  {name:"hello", image:"https://pixabay.com/get/e837b1072af4003ed1584d05fb1d4e97e07ee3d21cac104491f4c270a3e8b3b1_340.jpg",
+  description:" sum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incriatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+}, function(err, campground){
     if(err)
       console.log(err);
     else {
@@ -26,7 +29,8 @@ var Campground = mongoose.model("Campground",campgroundSchema);
       console.log(campground);
     }
   }
-);*/
+);
+*/
 
 app.get("/",function(req,res){
   res.render("landing");
@@ -57,6 +61,10 @@ app.post("/campgrounds",function(req,res){
 
 app.get("/campgrounds/new",function(req,res){
     res.render("new");
+});
+
+app.get("/campgrounds/:id", function(req,res){
+  res.render("show");
 });
 
 app.listen(3000,function(){
