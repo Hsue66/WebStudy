@@ -49,7 +49,8 @@ app.get("/campgrounds",function(req,res){
 app.post("/campgrounds",function(req,res){
   var name = req.body.name;
   var img = req.body.img;
-  var newCampground = {name: name, image: img};
+  var desc = req.body.description;
+  var newCampground = {name: name, image: img, description:desc};
   Campground.create(newCampground, function(err, campground){
     if(err)
       console.log(err);
@@ -64,7 +65,12 @@ app.get("/campgrounds/new",function(req,res){
 });
 
 app.get("/campgrounds/:id", function(req,res){
-  res.render("show");
+  Campground.findById(req.params.id, function(err, foundCampground){
+    if(err)
+      console.log(err);
+    else
+      res.render("show",{campground: foundCampground});
+  });
 });
 
 app.listen(3000,function(){
